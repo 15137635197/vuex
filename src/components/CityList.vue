@@ -1,7 +1,7 @@
 <template>
 	<div class="city">
 		<ul>
-			<li v-for="(item,index) in cityArr" @click="backFn(index)">
+			<li v-for="(item,index) in cityArr" :key="index" @click="backFn(index)">
 				<h3>{{item}}</h3>
 			</li>
 		</ul>
